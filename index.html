@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Health tracker</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="js.js"></script>
+</head>
+<body>
+<div id="whole">
+<h1>Welcome to Health Tracker</h1>
+<hr>
+   <div id="div1"> 
+  	<img src="user.jpg" class="user">
+    <h2>Enter your Details</h2>
+    <hr>
+    <form name="form1">
+
+    <p id="form11">Name</p>
+    <input type="text" name="name" placeholder="Enter Name">
+
+    <p id="form11">Gender</p>
+    <input type="radio" name="gender" value="male">Male<br>
+    <input type="radio" name="gender" value="female">Female<br>
+
+    <p id="form11">Age</p>
+    <input type="number" name="age" placeholder="Enter Age">
+    
+    <p id="form11">Height</p>
+    <input type="number" name="height" placeholder="Enter Height">
+
+    <p id="form11">Weight</p>
+    <input type="number" name="weight" placeholder="Enter Weight">
+    <br>  
+    <div id="error"></div>
+    <div class="sub" onclick="return vfun()">Calculate</div>
+    <p id="def"></p>
+    <br><hr>
+    <div id="bmrcalc"></div>
+    </form>
+   </div>
+   <br><br>
+  <p id="def">Basal Metabolic Rate is the amount of energy a human body uses in an entirely resting state. It's the amount of energy, your body needs, to support its vital functions.<br><br>
+  Nowadays, the Mifflin-St Jeor equation is believed to give the most accurate result and it's what we use in this calculator. This BMR formula is as follows:
+  <br><br>
+   BMR (kcal / day) = 10 * weight (kg) + 6.25 * height (cm) – 5 * age (y) + s (kcal / day),<br><br>
+
+   where s is +5 for males and -161 for females.</p>
+   <br><br><br>
+   <div id="div2">
+    <h2>Enter food details</h2><hr>
+   <form id="form2">
+     
+     <p id="form22">Food item</p>
+     <input type="text" id="fname" name="fname" placeholder="Enter your food">
+
+     <p id="form22">Carbohydrates</p>
+     <input type="number" id="carbs" name="carbs" placeholder="in calories"><br>
+
+     <p id="form22">Protein</p>
+     <input type="number" id="prot" name="prot" placeholder="in calories">
+
+     <p id="form22">Fat</p>
+     <input type="number" id="fat" name="fat" placeholder="in calories">
+     
+     <div class="sub" onclick="add()"><center>ADD</center></div>
+
+     <p id="form 22"><center>Click Submit after adding all your food items</center></p>
+     <div class="sub" onclick="result()"><center>Submit</center></div>
+
+     <br><hr>
+     <div id="whole1"></div>
+     <div id="whole2"></div>
+     <div id="whole3"></div>
+     <div id="whole4"></div>
+     <div id="dbut"></div>
+
+   </form>
+ </div>
+</div>
+</body>
+</html>
